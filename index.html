@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega N°3 - JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="obtenerLocalStorage()">
+    <h1>ENTREGA N°3</h1>
+    <div class="bienvenida">
+        <p>Hola <span id="spanProfe"></span>! su sesion fue iniciada el: <span id="spanSesion"></span> .</p>
+        <p> No es usted? por favor haz click <a href="index.html" onclick="borrarLocal()"><strong>AQUI</strong></a> para ingresar su nombre nuevamente </p>
+    </div>
+    <h2>INGRESO DE DATOS:</h2>
+    <form action="" method="dialog" id="formulario">
+        <div class="cajaInputIncorrecto cajaInputCorrecto divInputs">
+        <input type="text" name="nombreAlumno" id="inputNombre" placeholder="nombre">
+        <input type="text" name="apellidoAlumno" id="inputApellido" placeholder="apellido">
+        <input type="text" name="nota1" id="inputNota1" placeholder="1° trimestre">
+        <input type="text" name="nota2" id="inputNota2" placeholder="2° trimestre">
+        <input type="text" name="nota3" id="inputNota3" placeholder="3° trimestre">
+        <input type="submit" name="Enviar" id="cargarAlumno" onclick=funcionCargar()>
+        <!-- <input type="button" name="" id="x1x" onclick=mostrarNombre()> -->
+        </div>
+    </form>
+<h2 id="avisoError"></h2>
+<h3 id="avisoOk"></h2>
+
+<div class="tabla container">   
+    <table>
+        <tr id="tablaRenglon">  
+            <div class="divFilas">
+            <th class="thNombre"> Nombre </th> 
+            <th class="thApellido"> Apellido </th>
+            <th class="thPromedio"> Promedio </th>
+            </div>
+        </tr>
+    </table>
+</div>
+
+<div class="divBuscarApellido">
+    <p></p>
+    <input type="text" name="buscarA" id="inputBuscarApellido" placeholder="Buscar apellido">
+    <input type="button" class="botonBuscar" value="Buscar" onclick=buscarApellido()>
+    <h3 class="mostrarApellido"></h3>
+</div>
+
+<div class="divAprobadosYdesaprobados">
+    <div class="divAprobados">
+        <input type="button" value=" Mostrar alumnos aprobados" onclick=mostrarAprobados()>
+        <p> ========================= </p>
+        <p id="pAprobados">APROBADOS: </p>
+        <p> ========================= </p>
+    </div>
+    <div class="divDesaprobados">
+        <input type="button" value=" Mostrar alumnos desaprobados" onclick=mostrarDesaprobados()>
+        <p> ========================= </p>
+        <p id="pDesaprobados">DESAPROBADOS: </p>
+        <p> ========================= </p>
+    </div>
+</div>
+
+
+
+
+<!-- SCRIPT JS  -->
+<script src="./javascript.js"></script>
+</body>
+</html>

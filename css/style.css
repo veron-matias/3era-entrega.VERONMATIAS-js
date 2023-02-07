@@ -1,0 +1,87 @@
+
+/* ESTILO TABLA  */
+.container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+th {
+    padding:25px;
+    text-transform: uppercase;
+    }
+td {
+    padding-top: 25px;
+}
+/* FIN ESTILO TABLA  */
+
+body {
+    font-family: sans-serif;
+    align-items: center;
+    text-align: center;
+}
+.cajaInputIncorrecto {
+    border-width: 4px;
+    border-color: red;
+}
+.cajaInputCorrecto {
+    border-width: 4px;
+    border-color: rgb(94, 94, 250);
+}
+#avisoError {
+    color:red;
+}
+#avisoOk{
+    color:green;
+}
+.aprobado {
+    background:green;
+}
+.diciembre {
+    background:yellow;
+}
+.marzo {
+    background: red;
+}
+
+.divAprobadosYdesaprobados {
+    display: flex;
+    justify-content:space-around;
+}
+.divAprobadosYdesaprobados input{
+    background-color: rgb(173, 122, 222);
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 4px;
+}
+
+.divBuscarApellido .botonBuscar {
+    background-color: rgb(104, 150, 207);
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 4px;
+
+}
+.divBuscarApellido input{
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 4px;
+}
+.divBuscarApellido {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.mostrarApellido {
+    margin-top: 15px;
+    margin-bottom: 60px;
+    background-color: rgb(73, 73, 73);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.mostrarApellido p{
+    color: white;
+}
+.mostrarApellido h3{
+    color:rgb(242, 255, 53);
+
+}
